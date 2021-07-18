@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.img1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(me.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero {
+  background: #292c2a;
+  padding: 2rem;
+  opacity: 0.5;
+  width: 80%;
+}
+.hero h1 {
+  margin-bottom: 2rem;
+}
+/* animating down arrow */
+.down-arrow {
+  font-size: 80px;
+  font-weight: bolder;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 20px;
+  animation: bounce 700ms ease-in infinite;
+  color: blue;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 100px;
+  }
+
+  100% {
+    bottom: 05px;
+    color: yellow;
+  }
+}
+
+/* image 2 */
+.img2 {
+  width: 100vw;
+  height: 70vh;
+  background-image: url(dd.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.img3 {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(ligh.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Sections */
+section > p {
+  margin: 1rem;
+}
+.sec1,
+.sec2,
+.sec3 {
+  background: #292c2a;
+  color: white;
+  padding: 2rem;
+}
+.title {
+  background: #292c2a;
+  opacity: 0.7;
+  padding: 20px 50px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.img1,
+.img2,
+.img3 {
+  background-attachment: fixed;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}

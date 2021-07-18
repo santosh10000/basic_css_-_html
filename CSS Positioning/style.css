@@ -1,0 +1,31 @@
+/* Static/absolute/fixed/sticky/relative */
+body {
+  font-size: 2rem;
+}
+.parent {
+  background: blue;
+  padding: 1rem;
+  height: 700px;
+
+  /* position: relative; */
+}
+.parent > div {
+  height: 100px;
+}
+.child1 {
+  background: black;
+  color: white;
+  /* position: relative;
+  width: 200px;
+  left: 200px; */
+  /* position: absolute; */
+}
+.child2 {
+  background: red;
+  position: absolute;
+  bottom: 100px;
+}
+.child3 {
+  background: yellow;
+  /* position: sticky; */
+}

@@ -1,0 +1,101 @@
+.heading {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 60px 80px 40px 90px;
+}
+.heading > * {
+  height: 40px;
+  width: 100px;
+  background: #ffd700;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.ee {
+  width: 150px;
+}
+.heading > div:hover {
+  background: blueviolet;
+  color: white;
+}
+a:hover {
+  color: aliceblue;
+}
+.main {
+  display: grid;
+  gap: 3rem;
+  margin-left: 80px;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-areas:
+    "terry terry taco"
+    "terry terry kom";
+}
+.terry {
+  grid-area: terry;
+  background: url(tacos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .terry h1,
+p {
+  background: #ffd700;
+  height: 55px;
+  width: 270px;
+} */
+
+.terry {
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.terry h1,
+p {
+  background: #ffd700;
+}
+.terry h1 {
+  height: 50px;
+  width: 270px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.terry p {
+  height: 35px;
+  width: 180px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.taco {
+  grid-area: taco;
+  background: #ffd700;
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.kom {
+  grid-area: kom;
+  background: #ffd700;
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.tacos {
+  display: flex;
+  padding: 40px;
+}
+.tacos > div {
+  padding: 40px;
+}
